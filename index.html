@@ -30,14 +30,25 @@
                     Pro nasazení stačí vzít z tohoto repozitáře soubor <code>/production/all.css</code>.
                 </p>
                 <aside>
-                    Poznámka
+                    Časem přibude adresář s obrázky atd.
                 </aside>
-            </section>
-            <h2>Základní prvky</h2>
-            <section id="Elements">
                 <p>
-                    Tlačítka.
+                    Pro zkopírování HTML, prozkoumej kód v developer tools prohlížeče a zkopíruj.
                 </p>
+
+            </section>
+            <h2 id="Elements">Základní prvky</h2>
+            <section>
+
+                <h3>Nadpisy</h3>
+                <div class="layout example" id="Headings">
+                    <h1>Nadpis první úrovně</h1>
+                </div>
+                <aside>
+                    Nadpisy psát bez dvojtečky.
+                </aside>
+
+                <h3>Tlačítka</h3>
                 <div class="layout example" id="Buttons">
                     <button class="btn">Tlačítko</button>
                     <button class="btn primary">Primární tlačítko</button>
@@ -50,7 +61,82 @@
                     Tlačítka mají třídu <code>btn</code>, je to pro možnost sjednotit <code>a</code>,
                     <code>input[type="submit"]</code> a <code>button</code>
                 </aside>
+                <p>Skupina tlačítek</p>
+                <div class="layout example">
+                    <div class="btn-group">
+                        <button class="btn">Tlačítko</button>
+                        <button class="btn primary">Primární tlačítko</button>
+                    </div>
+                </div>
+                <h3>Box</h3>
+                <p>
+                    Box je zatím použit jen pro login a single action layouty.
+                </p>
+                <div class="layout example">
+                    <div class="box">
+                        <p>
+                            Nějaký text, pro ukázku.
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Alert</h3>
+                <div class="layout example">
+                    <p class="alert">
+                        Všechno&hellip;
+                    </p>
+                    <p class="alert success">
+                        Všechno je v pořádku.
+                    </p>
+                    <p class="alert error">
+                        Něco je docela, ale docela, špatně.
+                    </p>
+                </div>
             </section>
+            <h2 id="Controls">Složené prvky</h2>
+            <section>
+                <h3>Formulář</h3>
+                <div class="layout example">
+                    <form class="vertical">
+                        <div class="group">
+                            <label for="Login">Přihlašovací jméno:</label>
+                            <input type="text" id="Login" name="Login" placeholder="">
+                            <p class="validation">Vyplňte prosím přihlašovací jméno.</p>
+                        </div>
+                        <div class="group">
+                            <label for="PIN">PIN:</label>
+                            <input size="4" type="text" id="PIN" name="PIN" placeholder="">
+                        </div>
+                        <div class="group controls">
+                            <input class="btn primary" type="submit" value="Přihlásit se">
+                        </div>
+                    </form>
+                </div>
+                <p>Formulář s hláškou, např. neplatný PIN.</p>
+                <div class="layout example">
+                    <form class="vertical">
+                        <p class="alert error">
+                            Neplatný PIN, zkuste to znovu.
+                        </p>
+                        <div class="group">
+                            <label for="PIN2">PIN:</label>
+                            <input type="text" id="PIN2" name="PIN2" placeholder="****">
+                        </div>
+                        <div class="group controls">
+                            <input class="btn primary" type="submit" value="Lepší PIN">
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <h2 id="Layouts">Ukázky layoutů</h2>
+            <ol>
+                <li>
+                    <a href="layouts/singleInteraction.html">singleInteraction</a> - layout pro jednu operaci
+                </li>
+                <li>
+                    <a href="layouts/basic.html">basic</a> - základní layout
+                </li>
+            </ol>
         </div>
     </div>
 </body>

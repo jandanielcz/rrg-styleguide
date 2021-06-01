@@ -32,7 +32,7 @@ section {
   grid-template-rows: auto;
   gap: 1rem;
 }
-section p, section div, section pre {
+section p, section div, section pre, section h3 {
   grid-column: 1/2;
 }
 section pre {
@@ -50,6 +50,13 @@ section aside {
 
 code {
   border: 1px solid #808080;
+}
+
+.example {
+  border-top: 1px solid #bababa;
+  padding-top: 1rem;
+  border-bottom: 1px solid #bababa;
+  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=guide.css.map */
