@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RRG styleguide</title>
+    <link rel="stylesheet" href="styleguide/guide.css">
+    <link rel="stylesheet" href="production/all.css">
+    <script src="styleguide/enhance.js"></script>
+</head>
+<body>
+    <div id="Wrapper">
+        <div id="Nav">
+            <a href="#Top">Úvod</a>
+
+            <a href="#Elements">Základní prvky</a>
+            <a href="#Controls">Složené prvky</a>
+
+            <a href="#Layouts">Ukázky layoutů</a>
+        </div>
+        <div id="Center">
+            <h1>RRG Styleguide</h1>
+            <section id="Top">
+                <p>
+                    Tady jsou jednotlivé prvky, komplexnejší layouty i poznámky ke stylu aplikace Rarog.
+                </p>
+                <p>
+                    Pro nasazení stačí vzít z tohoto repozitáře soubor <code>/production/all.css</code>.
+                </p>
+                <aside>
+                    Poznámka
+                </aside>
+            </section>
+            <h2>Základní prvky</h2>
+            <section id="Elements">
+                <p>
+                    Tlačítka.
+                </p>
+                <div class="layout example" id="Buttons">
+                    <button class="btn">Tlačítko</button>
+                    <button class="btn primary">Primární tlačítko</button>
+                    <a href="#Elements" class="btn">Tlačítko</a>
+                    <a href="#Elements" class="btn primary">Primární tlačítko</a>
+                    <input type="submit" class="btn" value="Tlačítko" />
+                    <input type="submit" class="btn primary" value="Primární tlačítko" />
+                </div>
+                <aside>
+                    Tlačítka mají třídu <code>btn</code>, je to pro možnost sjednotit <code>a</code>,
+                    <code>input[type="submit"]</code> a <code>button</code>
+                </aside>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

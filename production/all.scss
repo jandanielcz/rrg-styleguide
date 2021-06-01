@@ -1,0 +1,48 @@
+@import "colors";
+
+.layout {
+  font-family: Arial, sans-serif;
+  font-size: 13pt;
+}
+
+.btn {
+  display: inline-block;
+  background-color: $grayBg;
+  padding: .5rem 1rem;
+  margin: .25rem;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: transparentize($grayText, 0.5) 1px 1px 3px;
+
+  &:hover {
+    background-color: lighten($grayBg, 10%);
+  }
+
+  &.primary {
+    background-color: $dotGreen;
+
+    &:hover {
+      background-color: lighten($dotGreen, 10%);
+    }
+  }
+
+
+}
+
+button.btn,
+input[type="submit"].btn
+{
+  font-family: Arial, sans-serif;
+  font-size: 13pt;
+}
+
+a.btn
+{
+  text-decoration: none;
+  color: $textColor;
+  cursor: default;
+}
+
+.btn {
+
+}

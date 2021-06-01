@@ -1,0 +1,37 @@
+.layout {
+  font-family: Arial, sans-serif;
+  font-size: 13pt;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #a0a0a0;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: rgba(128, 128, 128, 0.5) 1px 1px 3px;
+}
+.btn:hover {
+  background-color: #bababa;
+}
+.btn.primary {
+  background-color: #48ad71;
+}
+.btn.primary:hover {
+  background-color: #68c08c;
+}
+
+button.btn,
+input[type=submit].btn {
+  font-family: Arial, sans-serif;
+  font-size: 13pt;
+}
+
+a.btn {
+  text-decoration: none;
+  color: #000;
+  cursor: default;
+}
+
+/*# sourceMappingURL=all.css.map */
